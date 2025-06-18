@@ -13,7 +13,7 @@ DIR: <Forward/Reverse/Stop>, SPD: <n>%
 - Bidirectional DC motor control (Forward/Reverse)  
 - Proportional speed control via joystick X-axis  
 - Smooth PWM transition for realistic motor behavior  
-- Wireless transmission of motor speed & direction to PC GUI  
+- Wireless transmission of motor speed & direction to mobile bluetooth app 
 - Real-time display of direction, % speed, and joystick X value  
 
 ---
@@ -27,7 +27,6 @@ DIR: <Forward/Reverse/Stop>, SPD: <n>%
 | Joystick Module   | Analog (X-axis used) |
 | Bluetooth Module  | HC-05 (Slave mode)   |
 | DC Motor          | Brushed DC Motor     |
-| GUI Interface     | Python (Tkinter)     |
 | Power Supply      | 9V battery + 5V regulator |
 
 ---
@@ -65,18 +64,12 @@ DIR: <Forward/Reverse/Stop>, SPD: <n>%
 1. Open the project in MPLAB X and build.  
 2. Program the PIC16F877A.  
 3. Open a serial terminal at 9600 baud, 8N1 for UART feedback.  
-4. Pair a mobile device with the HC-05 module and open a Bluetooth serial app at 9600 baud for mobile feedback.  
-5. Run the Python GUI (Tkinter) on a PC to display real-time status.  
-6. Move the joystick to control motor direction and speed; feedback appears on PC GUI, terminal, and mobile app.  
+4. Pair a mobile device with the HC-05 module and open a Bluetooth serial app at 9600 baud for mobile feedback.    
+5. Move the joystick to control motor direction and speed; feedback appears on terminal, and mobile app.  
 
 ## License
 
-MIT License  
-
-## Author
-
-Deniz Akdemir  
-
+This project is for educational purposes.
 
 ## Project Credits
 
@@ -85,7 +78,7 @@ Deniz Akdemir
 - Taha Emre Gündoğan  
 
 *Institution:*  
-Istanbul Medipol University  
+Istanbul Medipol University - 
 Microcontrollers Course Project  
 
 *Course Instructor:*  
